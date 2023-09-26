@@ -52,7 +52,13 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 The back seat people drank more than those who sat in the front seats or middle seats.The people in the front seats and middle seats consumed about the same amount.
 
-## Numerical Summarys 
+## Numerical Summary 
+
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+This data shows the mean and median of the alcohol consumed by the people in the front,middle, and back seats.The data shows that the people in back seats drink at least three times more than the people in the front and middle seats.
 
 ## Inferential Tests
 
